@@ -1,0 +1,57 @@
+.about-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.top p {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 50%;
+  margin-bottom: 40px;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bottom-left img {
+  max-width: 80%;
+}
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bottom-right h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.bottom-right p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 180%;
+  opacity: 50%;
+  margin-bottom: 30px;
+}
+.about-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--btn-gradient);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-white);
+}
