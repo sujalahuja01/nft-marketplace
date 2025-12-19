@@ -8,6 +8,7 @@
 
 :root {
   --primary-text: #ffffff;
+  --btn-gradient: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
 }
 
 body {
@@ -17,5 +18,5 @@ body {
 }
 .container {
   max-width: 1197px;
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
 }

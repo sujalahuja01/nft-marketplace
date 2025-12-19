@@ -5,7 +5,7 @@ import search from "@assets/search.svg";
 import "./Header.css";
 const Header = () => {
   return (
-    <header className="container">
+    <header className="container header-cnt">
       <nav className="header">
         <div className="logo">
           <img src={logo} alt="" />
