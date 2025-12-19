@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav-ul ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+}
+.header-btn {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--primary-text);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  background-color: rgb(225 225 225/10%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  width: 384px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary-text);
+}
+
+.search-bar input:focus-visible {
+  outline: 2px solid rgb(225 225 225/40%);
+}
