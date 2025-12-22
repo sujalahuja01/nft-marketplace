@@ -1,0 +1,47 @@
+.card {
+  background-color: rgb(225 225 225 /10%);
+  padding: 26px;
+  border-radius: 10px;
+}
+.card:hover {
+  background-color: rgb(225 225 225 /50%);
+}
+.card-img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-btn:focus {
+  background: rgb(225 225 225 /50%);
+}
+.card-btn {
+  width: 100%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(225 225 225 /20%);
+  margin-bottom: 10px;
+}
+.nft {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bid-head {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(225 225 225 /20%);
+}
+
+.bid {
+  font-size: 20px;
+  font-weight: 700;
+}

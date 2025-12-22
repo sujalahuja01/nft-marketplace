@@ -1,0 +1,39 @@
+.creator-card {
+  background-color: rgb(225 225 225 /10%);
+  border-radius: 10px;
+}
+.creator-bg {
+  max-width: 100%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 50px 26px 42px 26px;
+  text-align: center;
+}
+
+.creator-img {
+  position: absolute;
+  top: -25%;
+  border-radius: 50%;
+}
+
+.creator-name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.desc {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(225 225 225 / 50%);
+}
+.follow-btn {
+  width: 100%;
+}

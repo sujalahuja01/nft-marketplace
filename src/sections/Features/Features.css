@@ -1,0 +1,25 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.para {
+  margin-bottom: 30px;
+  color: rgb(225 225 225/ 50%);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.featured-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}

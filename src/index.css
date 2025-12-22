@@ -9,6 +9,8 @@
 :root {
   --primary-text: #ffffff;
   --btn-gradient: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  --primary-font: "Poppins", sans-serif;
+  --primary-fade: rgb(225 225 225 / 10%);
 }
 
 body {
@@ -19,4 +21,15 @@ body {
 .container {
   max-width: 1197px;
   margin: 0 auto 150px auto;
+}
+
+.btn {
+  background: var(--btn-gradient);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--primary-text);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 20px;
 }

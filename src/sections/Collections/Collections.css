@@ -1,0 +1,52 @@
+.collection-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clc-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.clc-heading {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.clc-para {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(225 225 225/ 50%);
+}
+
+.clc-catagories {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.clc-btn {
+  background: rgb(225 225 225 / 10%);
+  border: none;
+  padding: 5px 0;
+  border-radius: 10px;
+  color: var(--primary-text);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 20px;
+  width: 288px;
+}
+.clc-btn:focus {
+  background: var(--btn-gradient);
+}
+
+.clc-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 100%;
+}

@@ -16,7 +16,7 @@
 .top p {
   font-size: 20px;
   font-weight: 500;
-  opacity: 50%;
+  color: rgb(225 225 225/ 50%);
   margin-bottom: 40px;
 }
 .bottom {
@@ -24,8 +24,11 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.bottom-left {
+  width: 490px;
+}
 .bottom-left img {
-  max-width: 80%;
+  max-width: 100%;
 }
 .bottom-right {
   display: flex;
@@ -54,4 +57,5 @@
   font-size: 20px;
   font-weight: 500;
   color: var(--primary-white);
+  font-family: var(--primary-font);
 }

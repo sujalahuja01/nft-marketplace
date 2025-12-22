@@ -1,20 +1,21 @@
 import React from "react";
+import "./CollectionCard.css";
 
-const CollectionCard = ({ name, imgLink, type, bid }) => {
+const CollectionCard = ({ name, imgLink, nft, bid }) => {
   return (
     <div className="card">
-      <img src={imgLink} alt="" />
+      <img className="card-img" src={imgLink} alt="" />
       <div className="card-info">
         <div className="info-left">
-          <h6>{name}</h6>
-          <p>{type}</p>
+          <h6 className="name">@{name}</h6>
+          <p className="nft">{nft}</p>
         </div>
         <div className="info-right">
-          <h6>Current Bid</h6>
-          <p>{bid}</p>
+          <h6 className="bid-head">Current Bid</h6>
+          <p className="bid">{bid}</p>
         </div>
       </div>
-      <button>Place a bid</button>
+      <button className="btn card-btn">Place a bid</button>
     </div>
   );
 };

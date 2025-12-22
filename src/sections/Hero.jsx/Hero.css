@@ -33,6 +33,7 @@
   font-size: 20px;
   font-weight: 500;
   color: var(--primary-white);
+  font-family: var(--primary-font);
 }
 .hero-btn2 {
   background: rgb(225 225 255 /10%);
