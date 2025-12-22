@@ -1,0 +1,22 @@
+.faq-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-head {
+  font-size: 40px;
+  font-family: 700;
+}
+.faq-para {
+  font-size: 20px;
+  font-family: 500;
+  margin-bottom: 50px;
+  color: rgb(225 225 225 /50%);
+}
+.faqs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}

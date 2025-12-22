@@ -100,3 +100,36 @@ export const creatorInfo = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
+
+export const questions = [
+  {
+    id: 1,
+    question: "Lorem ipsum ipsum ?",
+    answer: "",
+  },
+  {
+    id: 2,
+    question: "Lorem ipsum ipsum ?",
+    answer: "",
+  },
+  {
+    id: 3,
+    question: "Lorem ipsum ipsum ?",
+    answer: "",
+  },
+  {
+    id: 4,
+    question: "Lorem ipsum ipsum ?",
+    answer: "",
+  },
+  {
+    id: 5,
+    question: "Lorem ipsum ipsum ?",
+    answer: "",
+  },
+  {
+    id: 6,
+    question: "Lorem ipsum ipsum ?",
+    answer: "",
+  },
+];

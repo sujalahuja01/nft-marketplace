@@ -6,6 +6,7 @@ import About from "./sections/About/About";
 import Collections from "./sections/Collections/Collections";
 import Features from "./sections/Features/features";
 import Creators from "./sections/Creators/Creators";
+import FAQ from "./sections/FAQ/FAQ";
 const App = () => {
   return (
     <main>
@@ -16,6 +17,7 @@ const App = () => {
       <Collections />
       <Features />
       <Creators />
+      <FAQ />
     </main>
   );
 };
