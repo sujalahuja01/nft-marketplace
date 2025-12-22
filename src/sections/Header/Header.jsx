@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "@assets/psychoart.svg";
 import search from "@assets/search.svg";
+import ham from "@assets/hamburger.svg";
 
 import "./Header.css";
 const Header = () => {
@@ -27,6 +28,9 @@ const Header = () => {
             </li>
             <button className="btn">Select Wallet</button>
           </ul>
+        </div>
+        <div className="hamburger">
+          <img src={ham} alt="" />
         </div>
       </nav>
     </header>

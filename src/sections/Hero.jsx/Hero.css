@@ -52,3 +52,46 @@
   font-size: 20px;
   opacity: 50%;
 }
+
+@media (min-width: 1200px) {
+  .hero-cnt {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .hero-cnt {
+    padding: 0 20px;
+  }
+  .left-top h1 {
+    font-size: 40px;
+  }
+  .left-top p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-cnt {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  .left-top p {
+    font-size: 25px;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-cnt {
+    padding: 0 10px 0 40px;
+  }
+}

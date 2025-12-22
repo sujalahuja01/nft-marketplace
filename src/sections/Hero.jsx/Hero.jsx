@@ -12,11 +12,12 @@ const Hero = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit.
           </p>
-          <div className="left-mid">
-            <button className="btn">Explore Now</button>
-            <button className="btn  hero-btn2">Sell NFT</button>
-          </div>
         </div>
+        <div className="left-mid">
+          <button className="btn">Explore Now</button>
+          <button className="btn  hero-btn2">Sell NFT</button>
+        </div>
+
         <div className="left-bottom">
           <div className="info-box">
             <h3>37k+</h3>
