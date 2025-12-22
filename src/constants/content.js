@@ -133,3 +133,68 @@ export const questions = [
     answer: "",
   },
 ];
+
+export const footer_links = [
+  {
+    id: 1,
+    head: "About",
+    list: [
+      {
+        name: "Product",
+        link: "",
+      },
+      {
+        name: "Resource",
+        link: "",
+      },
+      {
+        name: "Term & Conditions",
+        link: "",
+      },
+      {
+        name: "FAQ",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    head: "Company",
+    list: [
+      {
+        name: "Our Team",
+        link: "",
+      },
+      {
+        name: "Partner With US",
+        link: "",
+      },
+      {
+        name: "Privacy Policy",
+        link: "",
+      },
+      {
+        name: "Features",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 3,
+    head: "Contact",
+    list: [
+      {
+        name: "+012 3456789",
+        link: "",
+      },
+      {
+        name: "anything@anything.com",
+        link: "",
+      },
+      {
+        name: "Term & Conditions",
+        link: "",
+      },
+    ],
+  },
+];

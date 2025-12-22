@@ -1,0 +1,17 @@
+.footer-cnt {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  gap: 130px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-logo {
+  margin-bottom: 20px;
+}
+.about-para {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(225 225 225/50%);
+}

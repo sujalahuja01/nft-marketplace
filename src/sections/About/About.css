@@ -19,7 +19,8 @@
   color: rgb(225 225 225/ 50%);
   margin-bottom: 40px;
 }
-.bottom {
+
+.about-bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
