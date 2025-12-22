@@ -7,6 +7,7 @@ import Collections from "./sections/Collections/Collections";
 import Features from "./sections/Features/features";
 import Creators from "./sections/Creators/Creators";
 import FAQ from "./sections/FAQ/FAQ";
+import Contact from "./sections/Contact/Contact";
 const App = () => {
   return (
     <main>
@@ -18,6 +19,7 @@ const App = () => {
       <Features />
       <Creators />
       <FAQ />
+      <Contact />
     </main>
   );
 };
