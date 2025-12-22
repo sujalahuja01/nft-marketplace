@@ -1,7 +1,7 @@
 import React from "react";
 import "./Creators.css";
 import CreatorCard from "../../components/CreatorCard/CreatorCard";
-import { creatorInfo } from "../../constants/content";
+import { creatorInfo } from "../../utils/content";
 
 const Creators = () => {
   return (

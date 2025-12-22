@@ -1,0 +1,5 @@
+.socials {
+  display: flex;
+  align-self: center;
+  gap: 40px;
+}

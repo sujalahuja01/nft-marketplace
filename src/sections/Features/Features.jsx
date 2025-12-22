@@ -1,6 +1,6 @@
 import React from "react";
 import "./Features.css";
-import { cardInfo } from "../../constants/content";
+import { cardInfo } from "../../utils/content";
 import CollectionCard from "../../components/CollectionCard/CollectionCard";
 
 const Features = () => {

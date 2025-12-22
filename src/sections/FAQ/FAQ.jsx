@@ -1,6 +1,6 @@
 import React from "react";
 import "./FAQ.css";
-import { questions } from "../../constants/content";
+import { questions } from "../../utils/content";
 import Questions from "../../components/Questions/Questions";
 
 const FAQ = () => {

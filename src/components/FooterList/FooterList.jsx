@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterList.css";
+import Socials from "../Socials/Socials";
 
 const FooterList = ({ head, list }) => {
   return (
@@ -14,6 +15,7 @@ const FooterList = ({ head, list }) => {
           </li>
         ))}
       </ul>
+      {list.map((item) => item.type === "social" && <Socials {...item} />)}
     </div>
   );
 };
