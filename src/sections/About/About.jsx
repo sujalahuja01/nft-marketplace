@@ -24,7 +24,7 @@ const About = () => {
             conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
             enim egestas, ac scelerisque ante pulvinar.
           </p>
-          <button className="about-btn">Show more</button>
+          <button className="btn">Show more</button>
         </div>
       </div>
     </section>

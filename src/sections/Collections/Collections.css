@@ -39,6 +39,7 @@
   font-weight: 500;
   font-size: 20px;
   width: 288px;
+  cursor: pointer;
 }
 .clc-btn:focus {
   background: var(--btn-gradient);
@@ -49,4 +50,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   max-width: 100%;
+}
+.clc-btn.active {
+  background: var(--btn-gradient);
 }

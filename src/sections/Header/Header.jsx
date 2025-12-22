@@ -25,7 +25,7 @@ const Header = () => {
             <li className="nav-link">
               <a href="">FAQ</a>
             </li>
-            <button className="header-btn">Select Wallet</button>
+            <button className="btn">Select Wallet</button>
           </ul>
         </div>
       </nav>

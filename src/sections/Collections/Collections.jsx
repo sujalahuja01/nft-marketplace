@@ -21,15 +21,18 @@ const Collections = () => {
         </p>
       </div>
       <div className="clc-catagories">
-        {catagories.map((cat) => (
-          <button
-            className=" clc-btn"
-            key={cat}
-            onClick={() => setActiveCatagory(cat.toLocaleLowerCase())}
-          >
-            {cat}
-          </button>
-        ))}
+        {catagories.map((cat) => {
+          const value = cat.toLocaleLowerCase();
+          return (
+            <button
+              className={`clc-btn ${activeCatagory === value ? "active" : ""}`}
+              key={cat}
+              onClick={() => setActiveCatagory(value)}
+            >
+              {cat}
+            </button>
+          );
+        })}
       </div>
       <div className="clc-cards">
         {filteredCard.map((info) => (

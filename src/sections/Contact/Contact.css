@@ -8,11 +8,13 @@
   border-radius: 10px;
   text-align: center;
 }
+
 .contact-head {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .contact-btn {
   background: rgb(225 225 225/50%);
 }

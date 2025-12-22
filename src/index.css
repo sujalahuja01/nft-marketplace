@@ -32,4 +32,9 @@ body {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 20px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
 }

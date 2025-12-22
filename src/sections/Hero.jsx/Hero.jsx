@@ -13,8 +13,8 @@ const Hero = () => {
             vulputate libero et velit.
           </p>
           <div className="left-mid">
-            <button className="hero-btn">Explore Now</button>
-            <button className="hero-btn hero-btn2">Sell NFT</button>
+            <button className="btn">Explore Now</button>
+            <button className="btn  hero-btn2">Sell NFT</button>
           </div>
         </div>
         <div className="left-bottom">
