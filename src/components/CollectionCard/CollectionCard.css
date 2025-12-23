@@ -31,6 +31,12 @@
   color: rgb(225 225 225 /20%);
   margin-bottom: 10px;
 }
+
+.name:hover {
+  color: rgb(225 225 225 /40%);
+  cursor: pointer;
+}
+
 .nft {
   font-size: 20px;
   font-weight: 700;
@@ -45,4 +51,28 @@
 .bid {
   font-size: 20px;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .nft {
+    font-size: 16px;
+  }
+  .bid-head {
+    font-size: 12px;
+  }
+
+  .bid {
+    font-size: 16px;
+  }
+  .card {
+    padding: 20px;
+  }
+
+  .card-img {
+    margin-bottom: 10px;
+  }
 }

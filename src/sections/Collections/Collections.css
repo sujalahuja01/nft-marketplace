@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
 }
 .clc-text {
   display: flex;
@@ -11,6 +12,7 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
+  text-align: center;
 }
 .clc-heading {
   font-weight: 700;
@@ -24,9 +26,11 @@
 }
 
 .clc-catagories {
-  display: flex;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .clc-btn {
@@ -38,9 +42,10 @@
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 20px;
-  width: 288px;
+  width: 100%;
   cursor: pointer;
 }
+
 .clc-btn:focus {
   background: var(--btn-gradient);
 }
@@ -53,4 +58,33 @@
 }
 .clc-btn.active {
   background: var(--btn-gradient);
+}
+
+@media (max-width: 991px) {
+  .clc-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-cnt {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clc-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .clc-btn {
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+
+  .clc-para {
+    font-size: 16px;
+  }
+
+  .collection-cnt {
+    margin-bottom: 50px;
+  }
 }

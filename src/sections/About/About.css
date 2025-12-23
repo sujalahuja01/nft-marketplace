@@ -73,6 +73,10 @@
     text-align: center;
     align-items: center;
   }
+
+  .about-cnt {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -85,5 +89,8 @@
 
   .about-btn {
     font-size: 16px;
+  }
+  .about-cnt {
+    margin-bottom: 50px;
   }
 }
