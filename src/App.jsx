@@ -21,7 +21,7 @@ const App = () => {
       <Features />
       <Creators />
       <FAQ />
-      {/* <Contact /> */}
+      <Contact />
       {/* <Footer /> */}
       {/* <Rights /> */}
     </main>

@@ -1,3 +1,7 @@
+.contact-cnt {
+  padding: 0 10px;
+}
+
 .contact {
   background: var(--btn-gradient);
   padding: 50px 0;
@@ -17,4 +21,32 @@
 
 .contact-btn {
   background: rgb(225 225 225/50%);
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 36px 0;
+  }
+  .contact-head {
+    font-size: 36px;
+  }
+
+  .contact-cnt {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 28px 0;
+  }
+  .contact-head {
+    font-size: 24px;
+  }
+  .contact-btn {
+    font-size: 16px;
+  }
+
+  .contact-cnt {
+    margin-bottom: 50px;
+  }
 }
