@@ -1,8 +1,15 @@
+.feature-cnt {
+  padding: 0 10px;
+}
 .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.head-text {
+  text-align: center;
 }
 
 .head {
@@ -22,4 +29,28 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+}
+
+@media (max-width: 991px) {
+  .featured-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-cnt {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  .feature-cnt {
+    margin-bottom: 50px;
+  }
 }

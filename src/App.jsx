@@ -18,7 +18,7 @@ const App = () => {
       <Sponsers />
       <About />
       <Collections />
-      {/* <Features /> */}
+      <Features />
       {/* <Creators /> */}
       {/* <FAQ /> */}
       {/* <Contact /> */}

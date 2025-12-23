@@ -8,10 +8,12 @@ const Features = () => {
   return (
     <section className="container feature-cnt">
       <div className="text">
-        <h2 className="head">Featured Artwork</h2>
-        <p className="para">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        <div className="head-text">
+          <h2 className="head">Featured Artwork</h2>
+          <p className="para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
         <div className="featured-cards">
           {featuredCard.map((info) => (
             <CollectionCard key={info.id} {...info} />
