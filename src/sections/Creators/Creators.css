@@ -1,3 +1,7 @@
+.creator-cnt {
+  padding: 0 10px;
+}
+
 .creators-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -9,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .creator-head {
   font-weight: 700;
@@ -20,4 +25,24 @@
   font-size: 20px;
   margin-bottom: 30px;
   color: rgb(225 225 225 /50%);
+}
+
+@media (max-width: 991px) {
+  .creators-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .creator-cnt {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .creators-card {
+    grid-template-columns: 1fr;
+  }
+
+  .creator-cnt {
+    margin-bottom: 50px;
+  }
 }

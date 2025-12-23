@@ -2,6 +2,7 @@
   background-color: rgb(225 225 225 /10%);
   border-radius: 10px;
 }
+
 .creator-bg {
   max-width: 100%;
 }
@@ -36,4 +37,14 @@
 }
 .follow-btn {
   width: 100%;
+}
+
+.follow-btn:focus {
+  background: rgb(225 225 225 /50%);
+}
+
+@media (max-width: 768px) {
+  .bottom {
+    padding: 50px 20px 24px 20px;
+  }
 }

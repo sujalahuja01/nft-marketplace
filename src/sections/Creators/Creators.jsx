@@ -5,7 +5,7 @@ import { creatorInfo } from "../../utils/content";
 
 const Creators = () => {
   return (
-    <section className="container">
+    <section className="container creator-cnt">
       <div className="creator-text">
         <h2 className="creator-head">Top Creator</h2>
         <p className="creator-para">
