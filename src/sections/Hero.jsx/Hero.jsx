@@ -14,8 +14,8 @@ const Hero = () => {
           </p>
         </div>
         <div className="left-mid">
-          <button className="btn">Explore Now</button>
-          <button className="btn  hero-btn2">Sell NFT</button>
+          <button className="btn hero-btn">Explore Now</button>
+          <button className="btn  hero-btn">Sell NFT</button>
         </div>
 
         <div className="left-bottom">

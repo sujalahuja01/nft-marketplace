@@ -17,6 +17,7 @@ body {
   background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
   color: var(--primary-text);
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1197px;
