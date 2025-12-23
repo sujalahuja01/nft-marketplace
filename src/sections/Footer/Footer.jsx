@@ -3,7 +3,6 @@ import "./Footer.css";
 import logo from "@assets/psychoart.svg";
 import { footer_links } from "../../utils/content";
 import FooterList from "../../components/FooterList/FooterList";
-import Rights from "../../sections/Rights/Rights";
 
 const Footer = () => {
   return (

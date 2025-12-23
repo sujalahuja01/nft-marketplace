@@ -7,15 +7,17 @@ const FooterList = ({ head, list }) => {
     <div className="footer-about">
       <h3 className="footer-head">{head}</h3>
       <ul className="footer-list">
-        {list.map((item) => (
-          <li key={item.name}>
+        {list.map((item, idx) => (
+          <li key={idx}>
             <a className="footer-item" href={item.link}>
               {item.name}
             </a>
           </li>
         ))}
       </ul>
-      {list.map((item) => item.type === "social" && <Socials {...item} />)}
+      {list.map(
+        (item, idx) => item.type === "social" && <Socials key={idx} {...item} />
+      )}
     </div>
   );
 };
