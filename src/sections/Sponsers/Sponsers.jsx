@@ -8,9 +8,9 @@ const Sponsers = () => {
   return (
     <section className="container">
       <div className="sponsers">
-        <img src={binance} alt="" />
-        <img src={ethereum} alt="" />
-        <img src={blockchain} alt="" />
+        <img className="spons-logo" src={binance} alt="" />
+        <img className="spons-logo" src={ethereum} alt="" />
+        <img className="spons-logo" src={blockchain} alt="" />
       </div>
     </section>
   );

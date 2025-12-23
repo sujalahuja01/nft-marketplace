@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "@assets/psychoart.svg";
 import search from "@assets/search.svg";
 import ham from "@assets/hamburger.svg";
