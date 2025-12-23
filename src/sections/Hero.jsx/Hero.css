@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 7.25rem;
+  padding: 0 16px;
 }
 .right img {
   max-width: 100%;
@@ -16,7 +17,6 @@
 .left-top p {
   font-size: 20px;
   font-weight: 500;
-  line-height: 180%;
   margin-bottom: 30px;
   opacity: 50%;
 }
@@ -59,15 +59,9 @@
   opacity: 50%;
 }
 
-@media (min-width: 1200px) {
-  .hero-cnt {
-    padding: 0 20px;
-  }
-}
-
 @media (max-width: 1199px) and (min-width: 992px) {
   .hero-cnt {
-    padding: 0 20px;
+    padding: 0 16px;
     gap: 3rem;
   }
   .left-top h1 {
@@ -80,7 +74,7 @@
 
 @media (max-width: 991px) {
   .hero-cnt {
-    padding: 0 30px;
+    padding: 0 16px;
     text-align: center;
     gap: 2.5rem;
     margin-bottom: 100px;
@@ -92,7 +86,9 @@
       "mid"
       "bottom";
   }
-
+  .left-top h1 {
+    font-size: 32px;
+  }
   .left {
     display: contents;
   }
@@ -121,7 +117,7 @@
 
 @media (max-width: 768px) {
   .hero-cnt {
-    padding: 0 10px 0 10px;
+    padding: 0 12px;
     margin-bottom: 50px;
     gap: 2rem;
   }
@@ -130,7 +126,7 @@
   }
 
   .left-top p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
 

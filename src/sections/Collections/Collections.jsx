@@ -13,7 +13,7 @@ const Collections = () => {
       : cardInfo.filter((info) => info.catagory === activeCatagory);
 
   return (
-    <section className="container collection-cnt">
+    <section className="container collection-cnt" id="collection">
       <div className="clc-text">
         <h2 className="clc-heading">Collections</h2>
         <p className="clc-para">

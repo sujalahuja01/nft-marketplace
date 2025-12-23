@@ -1,5 +1,5 @@
 .footer-cnt {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: 0 10px;
 }
 
@@ -51,10 +51,20 @@
 
 @media (max-width: 650px) {
   .rights {
+    font-size: 14px;
+  }
+  .footer {
+    gap: 3rem;
+  }
+  .rights {
     text-align: center;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 567px) {
+  .footer {
+    gap: 2rem;
+  }
+
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
   }

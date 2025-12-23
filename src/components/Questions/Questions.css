@@ -17,3 +17,8 @@
 .answer {
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  .ques-end {
+    margin-bottom: 36px;
+  }
+}

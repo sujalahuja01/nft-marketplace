@@ -9,7 +9,7 @@ const FAQ = () => {
     setActiveId((prev) => (prev === id ? null : id));
   };
   return (
-    <section className="container faq-cnt">
+    <section className="container faq-cnt" id="faqs">
       <div className="faq-text">
         <h2 className="faq-head">Frequently Asked Question</h2>
         <p className="faq-para">Wanna Ask Something?</p>

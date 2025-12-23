@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 16px;
 }
 .top {
   display: flex;
@@ -32,6 +32,7 @@
 }
 .bottom-left img {
   max-width: 100%;
+  margin-bottom: 16px;
 }
 .bottom-right {
   display: flex;
@@ -41,7 +42,7 @@
 }
 
 .bottom-right h3 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -74,16 +75,27 @@
     align-items: center;
   }
 
+  .bottom-right h3 {
+    font-size: 24px;
+  }
+
   .about-cnt {
     margin-bottom: 100px;
+  }
+  .top h2 {
+    font-size: 32px;
   }
 }
 
 @media (max-width: 768px) {
-  .bottom-right h3 {
-    font-size: 24px;
-  }
   .bottom-right p {
+    font-size: 16px;
+  }
+
+  .top h2 {
+    font-size: 28px;
+  }
+  .top p {
     font-size: 16px;
   }
 

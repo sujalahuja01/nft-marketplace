@@ -1,5 +1,5 @@
 .feature-cnt {
-  padding: 0 10px;
+  padding: 0 16px;
 }
 .text {
   display: flex;
@@ -35,11 +35,18 @@
   .feature-cnt {
     margin-bottom: 100px;
   }
+  .head {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 768px) {
   .featured-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .head {
+    font-size: 28px;
   }
 
   .para {

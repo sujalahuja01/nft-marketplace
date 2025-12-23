@@ -1,5 +1,5 @@
 .creator-cnt {
-  padding: 0 10px;
+  padding: 0 16px;
 }
 
 .creators-card {
@@ -31,15 +31,23 @@
   .creator-cnt {
     margin-bottom: 100px;
   }
+  .creator-head {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 768px) {
   .creators-card {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .creator-head {
+    font-size: 28px;
+  }
   .creator-cnt {
     margin-bottom: 50px;
+  }
+  .creator-para {
+    font-size: 16px;
   }
 }
 @media (max-width: 540px) {

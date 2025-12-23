@@ -6,7 +6,7 @@ import CollectionCard from "../../components/CollectionCard/CollectionCard";
 const Features = () => {
   const featuredCard = cardInfo.slice(0, 3);
   return (
-    <section className="container feature-cnt">
+    <section className="container feature-cnt" id="features">
       <div className="text">
         <div className="head-text">
           <h2 className="head">Featured Artwork</h2>

@@ -39,6 +39,9 @@
   .faq-cnt {
     margin-bottom: 100px;
   }
+  .faq-head {
+    font-size: 32px;
+  }
 }
 @media (max-width: 768px) {
   .faq-cnt {
@@ -46,5 +49,14 @@
   }
   .faqs {
     grid-template-columns: 1fr;
+  }
+  .faq-head {
+    font-size: 28px;
+  }
+  .faq-para {
+    font-size: 16px;
+  }
+  .para-end {
+    margin-bottom: 36px;
   }
 }
