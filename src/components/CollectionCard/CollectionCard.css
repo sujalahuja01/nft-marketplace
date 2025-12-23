@@ -6,6 +6,7 @@
 }
 .card:hover {
   background-color: rgb(225 225 225 /50%);
+  transform: scale(1.025);
 }
 .card-img {
   max-width: 100%;

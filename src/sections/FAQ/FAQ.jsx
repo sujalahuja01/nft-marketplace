@@ -14,6 +14,7 @@ const FAQ = () => {
         <h2 className="faq-head">Frequently Asked Question</h2>
         <p className="faq-para">Wanna Ask Something?</p>
       </div>
+      <div className="para-end" />
       <div className="faqs">
         {questions.map((ques) => (
           <Questions

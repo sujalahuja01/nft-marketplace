@@ -1,8 +1,11 @@
 .creator-card {
   background-color: rgb(225 225 225 /10%);
   border-radius: 10px;
+  transition: transform 0.4s ease;
 }
-
+.creator-card:hover {
+  transform: scale(1.025);
+}
 .creator-bg {
   max-width: 100%;
 }
