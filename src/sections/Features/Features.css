@@ -32,10 +32,6 @@
 }
 
 @media (max-width: 991px) {
-  .featured-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .feature-cnt {
     margin-bottom: 100px;
   }
@@ -43,7 +39,7 @@
 
 @media (max-width: 768px) {
   .featured-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .para {
@@ -52,5 +48,11 @@
 
   .feature-cnt {
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 540px) {
+  .featured-cards {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
   }
 }

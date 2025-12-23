@@ -9,7 +9,6 @@ import Creators from "./sections/Creators/Creators";
 import FAQ from "./sections/FAQ/FAQ";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./sections/Footer/Footer";
-import Rights from "./sections/Rights/Rights";
 const App = () => {
   return (
     <main>
@@ -22,8 +21,7 @@ const App = () => {
       <Creators />
       <FAQ />
       <Contact />
-      {/* <Footer /> */}
-      {/* <Rights /> */}
+      <Footer />
     </main>
   );
 };

@@ -28,10 +28,6 @@
 }
 
 @media (max-width: 991px) {
-  .creators-card {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .creator-cnt {
     margin-bottom: 100px;
   }
@@ -39,7 +35,17 @@
 
 @media (max-width: 768px) {
   .creators-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .creator-cnt {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 540px) {
+  .creators-card {
     grid-template-columns: 1fr;
+    padding: 0 10px;
   }
 
   .creator-cnt {
