@@ -6,11 +6,11 @@ import blockchain from "@assets/blockchain.svg";
 
 const Sponsers = () => {
   return (
-    <section className="container">
+    <section className="container spons-cnt">
       <div className="sponsers">
         <img className="spons-logo" src={binance} alt="" />
-        <img className="spons-logo" src={ethereum} alt="" />
         <img className="spons-logo" src={blockchain} alt="" />
+        <img className="spons-logo" src={ethereum} alt="" />
       </div>
     </section>
   );
