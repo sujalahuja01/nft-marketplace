@@ -1,14 +1,40 @@
 .header-cnt {
-  margin-top: 10px;
-  margin-bottom: 100px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  /* background: rgb(255 255 255 /10%);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px); */
 }
 
 .header {
+  max-width: 1197px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  padding: 10px 16px 0 16px;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-white);
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--text-white);
 }
 
 .nav-link a {
@@ -22,22 +48,40 @@
   margin-top: 10px;
 }
 
-.nav-ul ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 2.5rem;
-  list-style: none;
-  align-items: center;
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
-.header-btn {
-  background: var(--btn-gradient);
-  border: none;
-  padding: 10px 20px;
+
+.hamburger img {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu {
+  display: flex;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  padding: 20px 0;
+  margin-top: 10px;
+  text-align: center;
+  overflow: hidden;
   border-radius: 10px;
-  color: var(--primary-text);
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 20px;
+  /* margin: 0 16px; */
+  transition: all 0.4s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu .nav-ul {
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .search-bar {
@@ -46,12 +90,33 @@
   background-color: rgb(225 225 225/10%);
   padding: 10px;
   border-radius: 10px;
+  max-width: 384px;
 }
 
 .search-bar input {
   background-color: transparent;
   border: none;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary-text);
+}
+
+.menu-search-bar {
+  display: flex;
+  gap: 10px;
+  background-color: rgb(225 225 225/30%);
+  padding: 10px;
+  border-radius: 10px;
   max-width: 384px;
+  margin: 0 8px;
+  margin-bottom: 1.5rem;
+}
+
+.menu-search-bar input {
+  background-color: transparent;
+  border: none;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -62,61 +127,49 @@
 .search-bar input:focus {
   outline: none;
 }
-
-.desktop {
-  display: block;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-.hamburger img {
-  width: 40px;
-  height: 40px;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 110%;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background: rgb(255 255 255 /10%);
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
+.menu-search-bar input:focus {
+  outline: none;
 }
 
 @media (min-width: 1200px) {
   .header-cnt {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  .header-cnt {
-    padding: 0 20px;
+  .desktop-nav {
+    display: flex;
+    gap: 45px;
   }
+
   .nav-link a {
-    font-size: 17px;
+    font-size: 16px;
   }
-  .nav-ul ul {
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-ul {
     gap: 1.5rem;
   }
 }
 
-@media (max-width: 991px) {
-  .header-cnt {
-    padding: 0 30px;
-  }
-
-  .nav-ul {
+@media (max-width: 991px) and (min-width: 768px) {
+  .desktop-nav {
     display: none;
   }
-  .desktop {
+
+  .hamburger {
+    display: block;
+  }
+  .menu-search-bar {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .desktop-nav {
     display: none;
   }
 
@@ -124,21 +177,17 @@
     display: block;
   }
 
-  .mobile-menu ul {
-    list-style: none;
-    display: flex;
+  .nav-ul {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+  }
+  .search-bar {
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
-  .header-cnt {
-    padding: 0 10px 0 10px;
-    margin: 0 0 30px 0;
-  }
-
-  .search-bar {
-    display: none;
+@media (max-width: 575px) {
+  .nav-ul {
+    gap: 16px;
   }
 }

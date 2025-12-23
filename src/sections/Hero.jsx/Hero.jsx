@@ -4,7 +4,7 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="container hero-cnt ">
+    <section className="container hero-cnt " id="hero">
       <div className="left">
         <div className="left-top">
           <h1>Create, Sell & Collect Your Own Creative NFT</h1>

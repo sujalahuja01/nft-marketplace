@@ -5,21 +5,45 @@ import ham from "@assets/hamburger.svg";
 import cross from "@assets/cross.svg";
 import "./Header.css";
 
+function Naigation({ onClick }) {
+  return (
+    <ul className="nav-ul">
+      <li className="nav-link" onClick={onClick}>
+        <a href="#collection">Collections</a>
+      </li>
+      <li className="nav-link" onClick={onClick}>
+        <a href="#features">Features</a>
+      </li>
+      <li className="nav-link" onClick={onClick}>
+        <a href="#faqs">FAQ</a>
+      </li>
+      <button className="btn ">Select Wallet</button>
+    </ul>
+  );
+}
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="container header-cnt">
+    <header className=" header-cnt">
       <nav className="header">
         <div className="logo" onClick={() => setIsOpen(false)}>
-          <img src={logo} alt="" />
+          <a href="#hero">
+            <img src={logo} alt="" />
+          </a>
         </div>
+
         <div className="search-bar" onClick={() => setIsOpen(false)}>
           <img src={search} alt="" />
           <input type="text" placeholder="Search items and collections" />
         </div>
 
-        <div className="nav-ul desktop">
+        <div className="desktop-nav">
+          <Naigation />
+        </div>
+
+        {/* <div className="nav-ul desktop">
           <ul>
             <li className="nav-link">
               <a href="#collection">Collections</a>
@@ -32,26 +56,19 @@ const Header = () => {
             </li>
             <button className="btn">Select Wallet</button>
           </ul>
-        </div>
+        </div> */}
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
           <img src={isOpen ? cross : ham} alt="" />
         </div>
       </nav>
 
       {isOpen && (
-        <div className="mobile-menu">
-          <ul>
-            <li className="nav-link" onClick={() => setIsOpen(false)}>
-              <a href="#collection">Collections</a>
-            </li>
-            <li className="nav-link" onClick={() => setIsOpen(false)}>
-              <a href="#features">Features</a>
-            </li>
-            <li className="nav-link" onClick={() => setIsOpen(false)}>
-              <a href="#faqs">FAQ</a>
-            </li>
-            <button className="btn">Select Wallet</button>
-          </ul>
+        <div className="mobile-menu show ">
+          <div className="menu-search-bar ">
+            <img src={search} alt="" />
+            <input type="text" placeholder="Search items and collections" />
+          </div>
+          <Naigation onClick={() => setIsOpen(false)} />
         </div>
       )}
     </header>
