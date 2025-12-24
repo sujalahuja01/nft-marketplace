@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "@assets/psychoart.svg";
 import search from "@assets/search.svg";
 import ham from "@assets/hamburger.svg";
@@ -25,9 +25,13 @@ function Naigation({ onClick }) {
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  }, [isOpen]);
+
   return (
-    <header className=" header-cnt">
-      <nav className="header">
+    <header className="header-cnt ">
+      <nav className="header ">
         <div className="logo" onClick={() => setIsOpen(false)}>
           <a href="#hero">
             <img src={logo} alt="" />
@@ -42,28 +46,12 @@ const Header = () => {
         <div className="desktop-nav">
           <Naigation />
         </div>
-
-        {/* <div className="nav-ul desktop">
-          <ul>
-            <li className="nav-link">
-              <a href="#collection">Collections</a>
-            </li>
-            <li className="nav-link">
-              <a href="#features">Features</a>
-            </li>
-            <li className="nav-link">
-              <a href="#faqs">FAQ</a>
-            </li>
-            <button className="btn">Select Wallet</button>
-          </ul>
-        </div> */}
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
           <img src={isOpen ? cross : ham} alt="" />
         </div>
       </nav>
-
       {isOpen && (
-        <div className="mobile-menu show ">
+        <div className="mobile-menu   show ">
           <div className="menu-search-bar ">
             <img src={search} alt="" />
             <input type="text" placeholder="Search items and collections" />

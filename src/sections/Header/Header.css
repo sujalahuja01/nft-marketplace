@@ -2,10 +2,9 @@
   position: fixed;
   width: 100%;
   z-index: 50;
-  backdrop-filter: blur(12px);
-  /* background: rgb(255 255 255 /10%);
+  background: rgb(255 255 255 /10%);
   backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px); */
+  -webkit-backdrop-filter: blur(60px);
 }
 
 .header {
@@ -14,7 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 16px 0 16px;
+  padding: 10px 16px;
+  border-radius: 10px;
 }
 
 .nav-ul {
@@ -61,22 +61,17 @@
 .mobile-menu {
   display: flex;
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(18px);
   padding: 20px 0;
-  margin-top: 10px;
   text-align: center;
   overflow: hidden;
   border-radius: 10px;
-  /* margin: 0 16px; */
-  transition: all 0.4s ease-in-out;
   align-items: center;
-  justify-content: center;
 }
 
 .mobile-menu.show {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .mobile-menu .nav-ul {

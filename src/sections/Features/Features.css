@@ -60,6 +60,5 @@
 @media (max-width: 540px) {
   .featured-cards {
     grid-template-columns: 1fr;
-    padding: 0 10px;
   }
 }
