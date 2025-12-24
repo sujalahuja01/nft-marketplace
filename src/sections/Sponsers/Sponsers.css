@@ -7,19 +7,20 @@
 .spons-cnt {
   padding: 0 16px;
 }
-
+.sponsers img {
+  width: clamp(16vw, 28vw, 32vw);
+}
+@media (max-width: 1200px) {
+  .sponsers img {
+    width: clamp(16vw, 24vw, 32vw);
+  }
+}
 @media (max-width: 991px) {
-  .spons-logo {
-    width: clamp(16vw, 28vw, 32vw);
+  .sponsers img {
+    width: clamp(16vw, 22vw, 32vw);
   }
   .spons-cnt {
     margin-bottom: 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  .spons-logo {
-    width: clamp(12vw, 28vw, 28vw);
   }
 }
 
@@ -29,7 +30,7 @@
     padding: 0 8px;
   }
 
-  .spons-logo {
-    width: clamp(100px, 20vw, 90vw);
+  .sponsers img {
+    width: clamp(100px, 22vw, 28vw);
   }
 }

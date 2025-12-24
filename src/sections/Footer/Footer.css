@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
   color: rgb(225 225 225 /50%);
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 500;
 }
 .rights-span {
@@ -50,9 +50,6 @@
 }
 
 @media (max-width: 650px) {
-  .rights {
-    font-size: 14px;
-  }
   .footer {
     gap: 3rem;
   }
@@ -61,6 +58,9 @@
   }
 }
 @media (max-width: 567px) {
+  .rights {
+    font-size: 10px;
+  }
   .footer {
     gap: 2rem;
   }
