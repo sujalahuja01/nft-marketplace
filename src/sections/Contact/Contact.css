@@ -49,4 +49,7 @@
   .contact-cnt {
     margin-bottom: 50px;
   }
+  .contact-btn:hover {
+    transform: scale(1);
+  }
 }
