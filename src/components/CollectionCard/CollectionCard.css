@@ -76,4 +76,10 @@
   .card-img {
     margin-bottom: 10px;
   }
+  .card:hover {
+    transform: scale(1);
+  }
+  .card-btn:hover {
+    transform: scale(1);
+  }
 }

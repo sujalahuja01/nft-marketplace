@@ -50,4 +50,10 @@
   .bottom {
     padding: 50px 20px 24px 20px;
   }
+  .creator-card:hover {
+    transform: scale(1);
+  }
+  .follow-btn:hover {
+    transform: scale(1);
+  }
 }
