@@ -52,11 +52,13 @@ const Header = () => {
       </nav>
       {isOpen && (
         <div className="mobile-menu   show ">
-          <div className="menu-search-bar ">
-            <img src={search} alt="" />
-            <input type="text" placeholder="Search items and collections" />
+          <div className="mobile-menu-right">
+            <div className="menu-search-bar ">
+              <img src={search} alt="" />
+              <input type="text" placeholder="Search items and collections" />
+            </div>
+            <Naigation onClick={() => setIsOpen(false)} />
           </div>
-          <Naigation onClick={() => setIsOpen(false)} />
         </div>
       )}
     </header>

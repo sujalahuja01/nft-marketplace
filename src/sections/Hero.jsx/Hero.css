@@ -3,7 +3,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 7.25rem;
   padding: 0 16px;
-  padding-top: 100px;
 }
 .right img {
   max-width: 100%;
@@ -120,7 +119,6 @@
 
 @media (max-width: 768px) {
   .hero-cnt {
-    padding-top: 80px;
     margin-bottom: 50px;
     gap: 2rem;
   }
