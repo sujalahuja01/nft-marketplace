@@ -58,6 +58,11 @@
   font-size: 20px;
   opacity: 50%;
 }
+@media (min-width: 1200px) {
+  .hero-cnt {
+    padding-top: 100px;
+  }
+}
 
 @media (max-width: 1199px) and (min-width: 992px) {
   .hero-cnt {
