@@ -63,6 +63,9 @@
   color: var(--primary-white);
   font-family: var(--primary-font);
 }
+.about-btn:focus {
+  background: rgb(225 225 225 / 50%);
+}
 
 @media (max-width: 991px) {
   .about-bottom {
@@ -104,5 +107,8 @@
   }
   .about-cnt {
     margin-bottom: 50px;
+  }
+  .about-btn:hover {
+    transform: scale(1);
   }
 }

@@ -17,7 +17,7 @@ function Naigation({ onClick }) {
       <li className="nav-link" onClick={onClick}>
         <a href="#faqs">FAQ</a>
       </li>
-      <button className="btn ">Select Wallet</button>
+      <button className="btn header-btn ">Select Wallet</button>
     </ul>
   );
 }

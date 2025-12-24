@@ -184,6 +184,12 @@
   .search-bar {
     display: none;
   }
+  .header-btn:hover {
+    transform: scale(1);
+  }
+  .header-btn:focus {
+    background: rgb(225 225 225 / 50%);
+  }
 }
 
 @media (max-width: 575px) {
